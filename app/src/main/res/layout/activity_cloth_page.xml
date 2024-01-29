@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cloth_page"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/arrow_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:padding="10dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton2"
+        android:layout_width="22dp"
+        android:layout_height="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="9dp"
+        android:layout_toStartOf="@+id/appCompatButton"
+        android:background="@drawable/white_heart"
+        android:padding="5dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="31dp"
+        android:background="@drawable/order"
+        android:padding="5dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cloth_img"
+                android:layout_width="306dp"
+                android:layout_height="350dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                app:cardCornerRadius="20dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:background="#191414">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/saree"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/cloth_img"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="286dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="34dp"
+                        android:layout_marginTop="11dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="Silk Saree bskfbksjd bfksjbkjf klsdjfnlsjbfl sjfbkjbn dflkjds"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/like"
+                        android:layout_width="22dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/white_heart"
+                        />
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+
+                        android:layout_width="20dp"
+                        android:layout_height="21dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_toStartOf="@+id/like"
+                        android:background="@drawable/share"
+                        />
+
+                    <TextView
+                        android:id="@+id/cloth_des"
+                        android:layout_width="158dp"
+                        android:layout_height="38dp"
+                        android:layout_below="@+id/name"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="34dp"
+                        android:layout_marginTop="2dp"
+                        android:text="(Black , Red)"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/name"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@+id/cloth_des"
+                        android:text="50% OFF"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cloth_des"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:text="Rs. 799/-" />
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_below="@+id/line1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selecte color"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="36dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:buttonTint="@color/white"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selecte Size"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="36dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="S"
+                        android:textColor="@color/white"
+                        android:background="#00FFFFFF"
+                        />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="M"
+                        android:textColor="@color/white"
+                        android:background="#00FFFFFF"
+
+                        />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="L"
+                        android:textColor="@color/white"
+                        android:background="#00FFFFFF"
+                        />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="XL"
+                        android:textColor="@color/white"
+                        android:background="#00FFFFFF"
+                        />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="XXL"
+                        android:textColor="@color/white"
+                        android:background="#00FFFFFF"
+                        />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="3XL"
+                        android:textColor="@color/white"
+                        android:background="#00FFFFFF"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cardCornerRadius="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp"
+            android:background="#191414">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="13dp"
+                android:layout_toStartOf="@+id/_contnue"
+                app:cardCornerRadius="40dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/_continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="buy now"
+                    android:textColor="@color/black" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/_contnue"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/shape"
+                android:text="View Bag"
+                android:textColor="@color/white"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

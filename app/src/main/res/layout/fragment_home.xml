@@ -1,0 +1,905 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context="Fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="329dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/hi_"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="227dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/vivek_"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/notification"
+        android:layout_width="25dp"
+        android:layout_height="24dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="50dp"
+        android:clickable="true"
+        android:background="@drawable/notification" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/search_bar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/we_are_ready_to_offer_something_special"
+        android:textColor="#B8B1B1"
+        android:textSize="15sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/search_bar"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/search_shape"
+        android:hint="@string/search"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:textColorHint="#B0B3B6"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="26dp"
+        android:layout_alignStart="@+id/search_bar"
+        android:layout_alignBottom="@+id/search_bar"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/search" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_alignTop="@+id/search_bar"
+        android:layout_alignEnd="@+id/search_bar"
+        android:layout_alignBottom="@+id/search_bar"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/camera" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="49dp"
+        android:layout_height="42dp"
+        android:layout_above="@+id/scroll"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/search_bar"
+        android:background="@drawable/profile_shape" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/filter"
+        android:layout_width="24dp"
+        android:layout_height="23dp"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/filter" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_bar"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="60dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_below="@+id/search_bar"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="90dp"
+                android:text="@string/trending_products"
+                android:textColor="#fff"
+                android:textSize="40sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#191414"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="146dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/pendrive"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="SanDisk 32gb pendrive 32 GB Pen Drive"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="(Black, Red)"
+                        android:textColor="#C6B6B6"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:padding="0dp"
+                            android:paddingStart="5dp"
+                            android:text="Rs.500"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/white_heart"
+                            android:padding="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pendrive"
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_marginStart="7dp"
+                            android:background="@drawable/button_shape"
+                            android:text="@string/buy"
+                            android:textColor="#FAFAFB"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#191414"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="146dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/iphone"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Xiaomi 12 Pro 5G (Noir Black, 256 GB)"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="(12 GB RAM)"
+                        android:textColor="#C6B6B6"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:padding="0dp"
+                            android:paddingStart="5dp"
+                            android:text="Rs. 41,999"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/white_heart"
+                            android:padding="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/mobile"
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/button_shape"
+                            android:text="@string/buy"
+                            android:textColor="#FAFAFB"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#191414"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="146dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/t_shirt"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Men Typography Round Neck Cotton Blend"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Light Blue T-Shirt"
+                        android:textColor="#C6B6B6"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:padding="0dp"
+                            android:paddingStart="5dp"
+                            android:text="Rs.500"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/white_heart"
+                            android:padding="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/t_shirt"
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/button_shape"
+                            android:text="@string/buy"
+                            android:textColor="#FAFAFB"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#191414"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="146dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/t_shirt"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Men Typography Round Neck Cotton Blend"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Light Blue T-Shirt"
+                        android:textColor="#C6B6B6"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:padding="0dp"
+                            android:paddingStart="5dp"
+                            android:text="Rs.500"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/white_heart"
+                            android:padding="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/speaker1"
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/button_shape"
+                            android:text="@string/buy"
+                            android:textColor="#FAFAFB"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#191414"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="146dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/t_shirt"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Men Typography Round Neck Cotton Blend"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Light Blue T-Shirt"
+                        android:textColor="#C6B6B6"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:padding="0dp"
+                            android:paddingStart="5dp"
+                            android:text="Rs.500"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/white_heart"
+                            android:padding="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/speaker2"
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/button_shape"
+                            android:text="@string/buy"
+                            android:textColor="#FAFAFB"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#191414"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="146dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/t_shirt"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Men Typography Round Neck Cotton Blend"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Light Blue T-Shirt"
+                        android:textColor="#C6B6B6"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:padding="0dp"
+                            android:paddingStart="5dp"
+                            android:text="Rs.500"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/white_heart"
+                            android:padding="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/speaker3"
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/button_shape"
+                            android:text="@string/buy"
+                            android:textColor="#FAFAFB"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#191414"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="146dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/t_shirt"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Men Typography Round Neck Cotton Blend"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Light Blue T-Shirt"
+                        android:textColor="#C6B6B6"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:padding="0dp"
+                            android:paddingStart="5dp"
+                            android:text="Rs.500"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/white_heart"
+                            android:padding="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/speaker4"
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/button_shape"
+                            android:text="@string/buy"
+                            android:textColor="#FAFAFB"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#191414"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="146dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/t_shirt"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Men Typography Round Neck Cotton Blend"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Light Blue T-Shirt"
+                        android:textColor="#C6B6B6"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:padding="0dp"
+                            android:paddingStart="5dp"
+                            android:text="Rs.500"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/white_heart"
+                            android:padding="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/speaker5"
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/button_shape"
+                            android:text="@string/buy"
+                            android:textColor="#FAFAFB"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#191414"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="146dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/t_shirt"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Men Typography Round Neck Cotton Blend"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Light Blue T-Shirt"
+                        android:textColor="#C6B6B6"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:padding="0dp"
+                            android:paddingStart="5dp"
+                            android:text="Rs.500"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/white_heart"
+                            android:padding="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/speaker6"
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/button_shape"
+                            android:text="@string/buy"
+                            android:textColor="#FAFAFB"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".AppNotification">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/arrow_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:padding="10dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        />
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="151dp"
+        android:layout_toEndOf="@+id/arrow_back"
+        android:paddingTop="-5dp"
+        android:text="Notifications"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="21dp"
+        android:layout_height="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/search" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="818dp"
+        android:layout_below="@+id/notification"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="2dp"
+                android:background="#191111"
+                app:cardBackgroundColor="#2E2D2D"
+                app:cardCornerRadius="10dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/notfy1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="7dp"
+                        android:text="New Update Available"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/des1"
+                        android:layout_width="330dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/notfy1"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="28dp"
+                        android:ellipsize="end"
+                        android:textSize="13sp"
+                        android:maxLines="2"
+                        android:layout_marginBottom="30dp"
+                        android:text="Exciting News! A new update is ready for you to Enhance your Expereince."
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:id="@+id/date1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Today"
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="199dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@+id/date1"
+                        android:text="at 12:40 PM"
+                        android:textColor="#B3ABAB" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/card1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1dp"
+                android:background="#191111"
+                app:cardBackgroundColor="#2E2D2D"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/notfy2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Your Payment Recieved"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/des2"
+                        android:layout_width="330dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/notfy2"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="28dp"
+                        android:ellipsize="end"
+                        android:textSize="13sp"
+                        android:maxLines="2"
+                        android:layout_marginBottom="30dp"
+                        android:text="If you have setup Automentic payments you can rest assured that your future payment as processed schdule that."
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:id="@+id/date2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Yesterday"
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="193dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_toEndOf="@+id/date2"
+                        android:text="at 10:39 AM"
+                        android:textColor="#B3ABAB" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/card2"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginTop="1dp"
+
+                android:background="#191111"
+                app:cardBackgroundColor="#2E2D2D"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/notfy3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Order Placed"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/des3"
+                        android:layout_width="330dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/notfy3"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginBottom="30dp"
+                        android:ellipsize="end"
+                        android:textSize="13sp"
+                        android:maxLines="2"
+                        android:text="Thank you for your Order ! Your purchase is confirmed and on its way. we appreciate your bussiness"
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:id="@+id/date3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="3 days ago"
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="199dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@+id/date3"
+                        android:text="at 12:40 PM"
+                        android:textColor="#B3ABAB" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/card3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1dp"
+                android:background="#191111"
+                app:cardBackgroundColor="#2E2D2D"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/notfy4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Check Festival Offfer"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/des4"
+                        android:layout_width="330dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/notfy4"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginBottom="30dp"
+                        android:ellipsize="end"
+                        android:textSize="13sp"
+                        android:maxLines="2"
+                        android:text="Don't miss out on our incredibl Festival Offres! Shop now and save big on your favorites product. Limited time deals under Rs. 100. Grabe yours today!"
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:id="@+id/date4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="11 dec 2023"
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="199dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@+id/date4"
+                        android:text="at 02:20 PM"
+                        android:textColor="#B3ABAB" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/card4"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginTop="1dp"
+
+                android:background="#191111"
+                app:cardBackgroundColor="#2E2D2D"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/notfy5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Order Delivered"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/des5"
+                        android:layout_width="330dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/notfy5"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="28dp"
+                        android:ellipsize="end"
+                        android:textSize="13sp"
+                        android:maxLines="2"
+                        android:layout_marginBottom="30dp"
+                        android:text="We're thrilled to announce that your order has been succesfully delivered Enjoy your new purchase, and if you have any questions or need assistance, please, don't hesitate to reach out. Thank you for choosing us!"
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:id="@+id/date5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="9 dec 2023"
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="199dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@+id/date5"
+                        android:text="at 10:40 PM"
+                        android:textColor="#B3ABAB" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card6"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/card5"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1dp"
+                android:background="#191111"
+                app:cardBackgroundColor="#2E2D2D"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/notfy6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="7dp"
+                        android:text="New Offers Starting Now"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/des6"
+                        android:layout_width="330dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/notfy6"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="28dp"
+                        android:ellipsize="end"
+                        android:textSize="13sp"
+                        android:maxLines="2"
+                        android:layout_marginBottom="30dp"
+                        android:text="New Offers Alert! Get Incredable deals today! Hurry, limited stock Shop now and save big!"
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:id="@+id/date6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="2 Dec 2023"
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="199dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@+id/date6"
+                        android:text="at 11:40 AM"
+                        android:textColor="#B3ABAB" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card7"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/card6"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1dp"
+                android:background="#191111"
+                app:cardBackgroundColor="#2E2D2D"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/notfy7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="7dp"
+                        android:text="New Update Available"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/des7"
+                        android:layout_width="330dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/notfy7"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginBottom="30dp"
+                        android:ellipsize="end"
+                        android:textSize="13sp"
+                        android:maxLines="2"
+                        android:text="Exciting News! A new update is ready for you to Enhance your Expereince."
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:id="@+id/date7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Today"
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="199dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@+id/date7"
+                        android:text="at 12:40"
+                        android:textColor="#B3ABAB" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card8"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/card7"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1dp"
+                android:background="#191111"
+                app:cardBackgroundColor="#2E2D2D"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/notfy8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="7dp"
+                        android:text="New Update Available"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/des8"
+                        android:layout_width="330dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/notfy8"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginBottom="30dp"
+                        android:ellipsize="end"
+                        android:textSize="13sp"
+                        android:maxLines="2"
+                        android:text="Exciting News! A new update is ready for you to Enhance your Expereince."
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:id="@+id/date8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Today"
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="199dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@+id/date8"
+                        android:text="at 12:40"
+                        android:textColor="#B3ABAB" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card9"
+                android:layout_width="390dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/card8"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginTop="1dp"
+
+                android:background="#191111"
+                app:cardBackgroundColor="#2E2D2D"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/notfy9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="7dp"
+                        android:text="New Update Available"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/des9"
+                        android:layout_width="330dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/notfy9"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginBottom="30dp"
+                        android:ellipsize="end"
+                        android:textSize="13sp"
+                        android:maxLines="2"
+                        android:text="Exciting News! A new update is ready for you to Enhance your Expereince."
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:id="@+id/date9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Today"
+                        android:textColor="#B3ABAB" />
+
+                    <TextView
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="199dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@+id/date9"
+                        android:text="at 12:40"
+                        android:textColor="#B3ABAB" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

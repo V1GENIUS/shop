@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".my_orders">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/arrow_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        />
+
+    <TextView
+        android:id="@+id/wishlist"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="@string/my_order"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60sp"
+        android:textSize="40sp"
+        android:paddingTop="-10dp"
+        android:textColor="@color/white"/>
+
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/search_shape"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:hint="@string/search"
+        android:textColorHint="@color/material_dynamic_neutral90"
+        android:textSize="16sp"
+        tools:ignore="RtlSymmetry" >
+
+    </EditText>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/search"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="350dp"
+        android:background="@drawable/filter"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_bar"
+        android:layout_marginTop="6dp">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/home"
+        android:id="@+id/nav_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_black_24dp"
+        />
+
+    <item
+        android:title="@string/categery"
+        android:id="@+id/nav_cat"
+        android:enabled="true"
+        android:icon="@drawable/baseline_category_24"
+        />
+    <item
+        android:title="@string/profile"
+        android:id="@+id/nav_profile"
+        android:enabled="true"
+        android:icon="@drawable/baseline_perm_identity_24"
+
+        />
+
+    <item
+        android:title="@string/wishlist"
+        android:id="@+id/nav_wishlist"
+        android:enabled="true"
+        android:icon="@drawable/heart"
+        />
+
+    <item
+        android:title="@string/browse"
+        android:id="@+id/nav_browser"
+        android:enabled="true"
+        android:icon="@drawable/order"
+        />
+</menu>

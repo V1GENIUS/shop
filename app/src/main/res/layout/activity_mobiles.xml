@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Mobiles">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/arrow_back"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton2"
+        android:layout_width="22dp"
+        android:layout_height="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="9dp"
+        android:layout_toStartOf="@+id/appCompatButton"
+        android:background="@drawable/white_heart"
+        android:padding="5dp" />
+
+    <ImageView
+        android:layout_width="21dp"
+        android:layout_height="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="7dp"
+        android:layout_toStartOf="@+id/appCompatButton2"
+        android:background="@drawable/search" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="31dp"
+        android:background="@drawable/order"
+        android:padding="5dp" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="822dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="-39dp">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <TextView
+                android:layout_width="166dp"
+                android:layout_height="114dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_below="@+id/search_bar"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="70dp"
+                android:textStyle="bold"
+                android:text="Top Mobiles"
+                android:textColor="#fff"
+                android:textSize="40sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#191414"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:scaleType="fitXY"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:src="@drawable/i7"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="silver iPhone X and space gray iPhone X, iPhone X iPhone 8"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="(8gb , 128gb)"
+                        android:textColor="#C6B6B6"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:padding="0dp"
+                            android:paddingStart="5dp"
+                            android:text="Rs.20500/-"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/white_heart"
+                            android:padding="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pendrive"
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_marginStart="7dp"
+                            android:background="@drawable/button_shape"
+                            android:text="@string/buy"
+                            android:textColor="#FAFAFB"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="25dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="-50dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="254dp"
+                    android:background="#191414"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="159dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:paddingBottom="-10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/realme5"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Realme 5 Pro"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="(shine blue , silver)"
+                        android:textColor="#C6B6B6"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:padding="0dp"
+                            android:paddingStart="5dp"
+                            android:text="Rs. 13399/-"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/white_heart"
+                            android:padding="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/mobile"
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/button_shape"
+                            android:text="@string/buy"
+                            android:textColor="#FAFAFB"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="254dp"
+                    android:background="#191414"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="159dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="0dp"
+                        android:paddingEnd="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/samsung9"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Samsung F9 , Ultra"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Light Blue Ocean"
+                        android:textColor="#C6B6B6"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:padding="0dp"
+                            android:paddingStart="5dp"
+                            android:text="Rs.39999/-"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/white_heart"
+                            android:padding="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/t_shirt"
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/button_shape"
+                            android:text="@string/buy"
+                            android:textColor="#FAFAFB"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="253dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="-50dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="254dp"
+                    android:background="#191414"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="173dp"
+                        android:paddingStart="30dp"
+                        android:paddingTop="0dp"
+                        android:paddingEnd="30dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/realme3"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Realme 3 , Pro"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="(4GB ,64GB) ,(6GB,128GB)"
+                        android:textColor="#C6B6B6"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:padding="0dp"
+                            android:paddingStart="5dp"
+                            android:text="Rs.19500/-"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/white_heart"
+                            android:padding="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/western"
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/button_shape"
+                            android:text="@string/buy"
+                            android:textColor="#FAFAFB"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="254dp"
+                    android:background="#191414"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="159dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="0dp"
+                        android:paddingEnd="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/realme2"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="opoo A55"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="(Light Blue , White)"
+                        android:textColor="#C6B6B6"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:padding="0dp"
+                            android:paddingStart="5dp"
+                            android:text="Rs.15500/-"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/white_heart"
+                            android:padding="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/shirt"
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/button_shape"
+                            android:text="@string/buy"
+                            android:textColor="#FAFAFB"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="-30dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="254dp"
+                    android:background="#191414"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="173dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="0dp"
+                        android:paddingEnd="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/i7"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="iPhone x"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Black , White"
+                        android:textColor="#C6B6B6"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:padding="0dp"
+                            android:paddingStart="5dp"
+                            android:text="Rs.19799/-"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/white_heart"
+                            android:padding="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/sarii"
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/button_shape"
+                            android:text="@string/buy"
+                            android:textColor="#FAFAFB"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="254dp"
+                    android:background="#191414"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="173dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="0dp"
+                        android:paddingEnd="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mi1"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Oppo A54"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:paddingStart="5dp"
+                        android:text="Light blue , Black"
+                        android:textColor="#C6B6B6"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:padding="0dp"
+                            android:paddingStart="5dp"
+                            android:text="Rs.19999/-"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/white_heart"
+                            android:padding="5dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/sarii1"
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:layout_marginVertical="1dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/button_shape"
+                            android:text="@string/buy"
+                            android:textColor="#FAFAFB"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </ScrollView>
+</RelativeLayout>

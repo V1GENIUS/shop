@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SaveForLater">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/arrow_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:padding="10dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        />
+
+    <TextView
+        android:id="@+id/wishlist"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Save For Later"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60sp"
+        android:textSize="30sp"
+        android:paddingTop="-5dp"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="581dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="83dp"
+        android:layout_marginBottom="159dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="30dp"
+                android:background="@color/black">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="118dp"
+                    android:layout_height="106dp"
+                    android:src="@drawable/shoes" />
+
+                <RelativeLayout
+                    android:layout_width="229dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="118dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="213dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="15dp"
+                        android:padding="9dp"
+                        android:text="Shoes"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/des"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingStart="10dp"
+                        android:text="Gray white"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="229dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="118dp"
+                    android:layout_marginTop="70dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="133dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-4dp"
+                        android:layout_marginEnd="100dp"
+                        android:paddingStart="10dp"
+                        android:text="Rs. 500"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_toStartOf="@+id/number"
+                        android:src="@drawable/plus" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/minus" />
+
+                    <TextView
+                        android:id="@+id/number"
+                        android:layout_width="31dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="36dp"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textSize="18dp" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="110dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="198dp"
+                        android:layout_height="match_parent"
+                        android:text="remove" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Add to bag" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="155dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="30dp"
+                android:background="@color/black">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="118dp"
+                    android:layout_height="106dp"
+                    android:src="@drawable/shoes" />
+
+                <RelativeLayout
+                    android:layout_width="229dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="118dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="213dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="15dp"
+                        android:padding="9dp"
+                        android:text="Shoes"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/des1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingStart="10dp"
+                        android:text="Gray white"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="229dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="118dp"
+                    android:layout_marginTop="70dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/price1"
+                        android:layout_width="133dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-4dp"
+                        android:layout_marginEnd="100dp"
+                        android:paddingStart="10dp"
+                        android:text="Rs. 500"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_toStartOf="@+id/number1"
+                        android:src="@drawable/plus" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="3dp"
+                        android:src="@drawable/minus" />
+
+                    <TextView
+                        android:id="@+id/number1"
+                        android:layout_width="31dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="36dp"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textSize="18dp" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="110dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="198dp"
+                        android:layout_height="match_parent"
+                        android:text="remove" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Add to bag" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
